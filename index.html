@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
 
-    <!-- Google Font -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -21,6 +21,7 @@
             },
             fontFamily: {
               'manrope': ['Manrope', 'sans-serif'],
+              'miama': ['Miama', 'sans-serif'],
             }
             }
           }
@@ -70,38 +71,37 @@
     </header>
     <main>
         <!-- Products Section -->
-        <section class="max-w-screen-lg m-auto my-14">
+        <section class="max-w-screen-lg m-auto my-20">
             <div class="text-center mb-8">
                 <h2 class="font-extrabold text-3xl sm:text-4xl md:text-5xl mb-4">Our Featured Products</h2>
                 <p class="font-medium text-sm sm:text-base md:text-lg text-[#777777] w-full mx-auto sm:w-[85%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50 rounded-xl">
                     <img src="images/tea-1.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Milk Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
                 </div>
-                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50 rounded-xl">
                     <img src="images/tea-2.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Black Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
                 </div>
-                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50 rounded-xl">
                     <img src="images/tea-3.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Lemon Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
                 </div>
-                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50 rounded-xl">
                     <img src="images/tea-4.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Green Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
                 </div>
-               
             </div>
         </section>
 
         <!-- Great Tea Section -->
-        <section class="max-w-screen-lg m-auto my-14 grid grid-cols-1 sm:grid-cols-5 gap-8">
+        <section class="max-w-screen-lg m-auto my-20 grid grid-cols-1 sm:grid-cols-5 gap-8">
             <div class="grid grid-cols-2 grid-rows-3 gap-5 col-span-3">
                 <div class="bg-gradient-to-r from-[#ff000031] to-[#ff88381c] rounded-xl"></div>
                 <div class="bg-[#E6A6231A] row-span-2 rounded-xl flex items-center">
@@ -129,7 +129,7 @@
         </section>
 
         <!-- Super Clients -->
-        <section class="max-w-screen-lg m-auto my-14 grid grid-cols-1 sm:grid-cols-2 items-center bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
+        <section class="max-w-screen-lg m-auto my-20 grid grid-cols-1 sm:grid-cols-2 items-center bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-2xl">
             <div class="text-center flex flex-col justify-center m-6 sm:m-10 sm:p-14">
                 <h1 class="font-extrabold text-4xl sm:text-5xl text-[#F4F4F4] mb-5">Meet Our Super Clients</h1>
                 <p class="font-medium text-sm sm:text-base text-[#F4F4F4] mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -145,7 +145,7 @@
                     </div>
                     <div>
                         <p class="font-normal text-sm sm:text-base mb-2 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
-                        <h2 class="font-bold text-sm sm:text-base text-[#1C1C1C] mb-2">Sarafat Karim</h2>
+                        <h2 class="font-bold font-miama text-sm sm:text-base text-[#1C1C1C] mb-2">Minhazus Salekin</h2>
                         <h3 class="font-medium text-sm sm:text-base text-[#5D5A6F]">Student</h3>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                     </div>
                     <div>
                         <p class="font-normal text-sm sm:text-base mb-2 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
-                        <h2 class="font-bold text-sm sm:text-base text-[#1C1C1C] mb-2">Sarafat Karim</h2>
+                        <h2 class="font-bold font-miama text-sm sm:text-base text-[#1C1C1C] mb-2">Sarafat Karim</h2>
                         <h3 class="font-medium text-sm sm:text-base text-[#5D5A6F]">Student</h3>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                     </div>
                     <div>
                         <p class="font-normal text-sm sm:text-base mb-2 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
-                        <h2 class="font-bold text-sm sm:text-base text-[#1C1C1C] mb-2">Sarafat Karim</h2>
+                        <h2 class="font-miama font-bold text-sm sm:text-base text-[#1C1C1C] mb-2">Sarfuddin Al  Miraz</h2>
                         <h3 class="font-medium text-sm sm:text-base text-[#5D5A6F]">Student</h3>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
         </section>
 
         <!-- News Section -->
-        <section class="max-w-screen-lg m-auto my-14">
+        <section class="max-w-screen-lg m-auto my-20">
             <div class="text-center mb-10">
                 <h1 class="font-extrabold text-4xl sm:text-5xl mb-4">News & Events</h1>
                 <p class="font-medium text-sm sm:text-base text-[#777777] w-full sm:w-3/4 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
