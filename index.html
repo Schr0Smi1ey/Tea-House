@@ -37,6 +37,9 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
+            .gradient-footer {
+                background: linear-gradient(270.00deg, rgba(255, 0, 0, 0.1),rgba(255, 137, 56, 0.1) 100%);
+            }
         }
     </style>
       <!-- Font Awesome cdn -->
@@ -211,8 +214,58 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="gradient-footer">
+        <div class="max-w-screen-lg m-auto py-20">
+            <div class="flex justify-between items-center gap-10 mb-20 p-5">
+                <div class="">
+                    <img src="images/cup.png" alt="">
+                </div>
+                <div class="flex items-center gap-3 sm:gap-10">
+                    <h4 class="font-medium text-sm sm:text-base text-[#494949]">Ready to get strated?</h4>
+                    <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-3 py-2 rounded-lg"><span class="text-white font-bold text-xl">Get Started</span></button>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 mb-20 gap-y-10 p-5">
+                <div class="lg:mx-auto">
+                    <ul class="space-y-3">
+                        <li class="font-semibold text-2xl md:text-3xl mb-5">Quick Links</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">Home</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">About Us</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">Insurance</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="lg:mx-auto">
+                    <ul class="space-y-3">
+                        <li class="font-semibold text-2xl md:text-3xl mb-5">Our Service</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">Life Insurance</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">Car Insurance</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">Health Insurance</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">House Insurance</li>
+                    </ul>
+                </div>
+                <div class="lg:mx-auto">
+                    <ul class="space-y-3">
+                        <li class="font-semibold text-2xl md:text-3xl mb-5">Help</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">FAQs</li>
+                        <li class="font-normal text-sm sm:text-base text-[#494949] hover:text-orange-500 hover:font-bold">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="lg:mx-auto">
+                    <h2 class="font-bold text-xl sm:text-2xl mb-10">Subscribe to our newsletter</h2>
+                    <div class="flex">
+                        <div>
+                            <input type="text" placeholder="Enter your email" class="bg-transparent border-none text-orange-700 w-5/6 pl-5 py-2">
+                            <hr class="border-1 border-gray-500 w-5/6">
+                        </div>
+                        <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-full px-3 py-2"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <h4 class="font-medium text-sm sm:text-base text-[#494949]">© 2027 UIDesign.to - All rights reserved.</h4>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
