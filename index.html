@@ -16,9 +16,12 @@
         tailwind.config = {
           theme: {
             extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              'manrope': ['Manrope', 'sans-serif'],
+            }
             }
           }
         }
@@ -32,14 +35,13 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                /* text-fill-color: transparent; */
             }
         }
     </style>
       <!-- Font Awesome cdn -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="font-manrope">
     <header class="max-w-screen-xl mx-auto">
         <!-- Banner-Section -->
         <section class="sm:flex my-8">
