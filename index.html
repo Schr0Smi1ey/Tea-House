@@ -24,6 +24,18 @@
         }
       </script>
 
+
+    <style>
+        @layer utilities {
+            .gradient-btn {
+                background: linear-gradient(270deg, rgb(255, 0, 0), rgb(255, 137, 56));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                /* text-fill-color: transparent; */
+            }
+        }
+    </style>
       <!-- Font Awesome cdn -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -32,16 +44,16 @@
         <!-- Banner-Section -->
         <section class="sm:flex my-8">
             <!-- Banner left -->
-            <div class="border-2 border-red-500">
+            <div>
                 <h1 class="font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-7xl text-[#1C1C1C] mb-7">It's good<br>tea time at The<br>Tea House</h1>
                 <div class="font-medium text-base md:text-lg text-[#777777] mb-7 lg:w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</div>
                 <button class="font-bold text-base sm:text-lg md:text-xl lg:text-3xl text-[#FFFFFF] bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-3 md:p-4 lg:p-5 rounded-lg">Explore More <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></button>
             </div>
             <!-- Banner right -->
-            <div class="border-2 border-green-500 flex  items-center">
-                <div class="border-2 border-green-500 relative">
+            <div class="flex  items-center">
+                <div class="relative">
                     <img src="images/banner.png" alt="" class="w-full sm:w-auto">
-                    <div class="border-2 border-red-500 absolute flex items-center rounded-lg shadow-lg bg-white p-2 lg:p-3 bottom-[10%] left-[10%] sm:bottom-[5%] lg:left-[15%] xl:left-[20%]">
+                    <div class="absolute flex items-center rounded-lg shadow-lg bg-white p-2 lg:p-3 bottom-[10%] left-[10%] sm:bottom-[5%] lg:left-[15%] xl:left-[20%]">
                         <div class="mr-1">
                             <i class="fa-solid fa-star text-[#FFC850] text-2xl sm:text-3xl md:text-4xl"></i>
                         </div>
@@ -56,28 +68,28 @@
     </header>
     <main>
         <!-- Products Section -->
-        <section class="border-2 border-red-500 max-w-screen-lg m-auto my-14">
+        <section class="max-w-screen-lg m-auto my-14">
             <div class="text-center mb-8">
                 <h2 class="font-extrabold text-3xl sm:text-4xl md:text-5xl mb-4">Our Featured Products</h2>
                 <p class="font-medium text-sm sm:text-base md:text-lg text-[#777777] w-full mx-auto sm:w-[85%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
-            <div class="border-2 border-red-500 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-                <div class="border-2 border-green-500 p-2 sm:p-3 md:p-4 lg:p-5 text-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
                     <img src="images/tea-1.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Milk Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
                 </div>
-                <div class="border-2 border-green-500 p-2 sm:p-3 md:p-4 lg:p-5 text-center">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
                     <img src="images/tea-2.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Black Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
                 </div>
-                <div class="border-2 border-green-500 p-2 sm:p-3 md:p-4 lg:p-5 text-center">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
                     <img src="images/tea-3.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Lemon Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
                 </div>
-                <div class="border-2 border-green-500 p-2 sm:p-3 md:p-4 lg:p-5 text-center">
+                <div class="p-2 sm:p-3 md:p-4 lg:p-5 text-center shadow-md bg-gray-50">
                     <img src="images/tea-4.png"alt="" class="mx-auto mb-4">
                     <h2 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 text-[#1C1C1C]">Green Tea</h2>
                     <h5 class="font-semibold text-sm sm:text-base text-[#777777]">Creamer could be replaced by fresh milk</h5>
@@ -87,8 +99,8 @@
         </section>
 
         <!-- Great Tea Section -->
-        <section class="max-w-screen-lg m-auto my-14 grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div class="grid grid-cols-2 grid-rows-3 gap-5">
+        <section class="max-w-screen-lg m-auto my-14 grid grid-cols-1 sm:grid-cols-5 gap-8">
+            <div class="grid grid-cols-2 grid-rows-3 gap-5 col-span-3">
                 <div class="bg-gradient-to-r from-[#ff000031] to-[#ff88381c] rounded-xl"></div>
                 <div class="bg-[#E6A6231A] row-span-2 rounded-xl flex items-center">
                     <img src="images/fresh-1.png" class="mx-auto h-3/4" alt="">
@@ -98,18 +110,64 @@
                 </div>
                 <div class="bg-[#5776391A] rounded-xl"></div>
             </div>
-            <div class="">
+            <div class="col-span-2">
                 <div class="mb-5">
-                    <h1 class="font-extrabold text:3xl sm:text-4xl md:text-5xl mb-6">Great Tea, Freshly Presented</h1>
+                    <h1 class="font-extrabold text-lg sm:text-5xl mb-6">Great Tea, Freshly Presented</h1>
                     <p class="font-medium text-sm sm:text-base text-[#777777]">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
                 </div>
                 <div class="mb-5">
-                    <h2 class="font-extrabold text-base sm:text-lg text-[#1C1C1C] mb-4">Unique Taste</h2>
+                    <h2 class="font-extrabold text-lg  text-[#1C1C1C] mb-4">Unique Taste</h2>
                     <p class="font-medium text-sm sm:text-base text-[#777777]">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
                 </div>
                 <div>
-                    <h2 class="font-extrabold text-base sm:text-lg text-[#1C1C1C] mb-4">Premium Quality</h2>
+                    <h2 class="font-extrabold text-lg  text-[#1C1C1C] mb-4">Premium Quality</h2>
                     <p class="font-medium text-sm sm:text-base text-[#777777]">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Super Clients -->
+        <section class="max-w-screen-lg m-auto my-14 grid grid-cols-1 sm:grid-cols-2 items-center bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
+            <div class="text-center flex flex-col justify-center m-6 sm:m-10 sm:p-14">
+                <h1 class="font-extrabold text-4xl sm:text-5xl text-[#F4F4F4] mb-5">Meet Our Super Clients</h1>
+                <p class="font-medium text-sm sm:text-base text-[#F4F4F4] mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <div class="mb-10">
+                    <button class="bg-white px-3 py-2 rounded-lg"><span class="gradient-btn font-bold text-xl">Explore More</span></button>
+                </div>
+            </div>
+            <div class="relative flex flex-col items-end sm:items-end justify-evenly self-center sm:mr-10">
+                <!-- Top Card -->
+                <div class="relative bg-white w-3/4 px-5 pt-8 pb-2 sm:px-7 sm:pt-10 sm:pb-2 mt-10 rounded-lg opacity-40">
+                    <div class="absolute -top-5 -left-5 ">
+                        <img src="images/client.png" alt="" class="p-1 bg-white rounded-full">
+                    </div>
+                    <div>
+                        <p class="font-normal text-sm sm:text-base mb-2 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
+                        <h2 class="font-bold text-sm sm:text-base text-[#1C1C1C] mb-2">Sarafat Karim</h2>
+                        <h3 class="font-medium text-sm sm:text-base text-[#5D5A6F]">Student</h3>
+                    </div>
+                </div>
+
+                <div class="absolute left-4 sm:left-0 z-10 bg-white w-3/4 p-8 sm:p-10 rounded-lg">
+                    <div class="absolute -top-7 sm:-top-5 -left-5 ">
+                        <img src="images/client.png" alt="" class="p-1 bg-white rounded-full">
+                    </div>
+                    <div>
+                        <p class="font-normal text-sm sm:text-base mb-2 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
+                        <h2 class="font-bold text-sm sm:text-base text-[#1C1C1C] mb-2">Sarafat Karim</h2>
+                        <h3 class="font-medium text-sm sm:text-base text-[#5D5A6F]">Student</h3>
+                    </div>
+                </div>
+
+                <div class="relative bg-white w-3/4 px-5 pt-8 pb-2 sm:px-7 sm:pt-10 sm:pb-2 mt-14 mb-8 rounded-lg opacity-40">
+                    <div class="absolute -top-5 -left-5 ">
+                        <img src="images/client.png" alt="" class="p-1 bg-white rounded-full">
+                    </div>
+                    <div>
+                        <p class="font-normal text-sm sm:text-base mb-2 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
+                        <h2 class="font-bold text-sm sm:text-base text-[#1C1C1C] mb-2">Sarafat Karim</h2>
+                        <h3 class="font-medium text-sm sm:text-base text-[#5D5A6F]">Student</h3>
+                    </div>
                 </div>
             </div>
         </section>
